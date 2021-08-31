@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 Atroox
 riven
 darius
 sett
+=======
+Atroox 
+darius
+sett
+yorick
+riven
+>>>>>>> 829f9638284657188948196b3eb25ec4524f34f7
