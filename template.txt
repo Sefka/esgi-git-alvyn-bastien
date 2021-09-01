@@ -1,0 +1,46 @@
+Les commandes utilisées pour la réalisation du repo distant via le bash git avec comme objectif de suivre
+le workflow "gitflow"
+
+Pour cet exercice nous avons choisi de partir d'un nouveau repo
+Nous avons donc créé un repo sur github puis exécuté les commandes suivantes afin de le réaliser
+
+git init
+git clone <url>
+cd <chemin d'accès>
+
+Nous voilà prêts à commencer ! :) sur la branche "main" (ou "master")
+
+Dans un premier temps après avoir défini notre workflow nous avions choisi de créer plusieurs branches
+à notre repo selon le modèle suivant
+
+
+Une branche "Main" > Une branche "Develop" > Des branches "feature" (3) auxquelles nous avons ajouté
+
+Une branche "Release" et enfin une branche "Hotfix"
+
+Pour créer la première branche : 
+
+git checkout -b develop 
+
+Nous a permis de d'avoir une première branche et de nous déplacer dessus 
+
+git branch feature 1
+git branch feature 2
+git branch feature 3
+
+Constituaient ainsi nos branches "Feature" sur lesquelles nous allions definir les différents fonctionnalités
+
+Mais il fallait ajouter des fichiers sur chaques branches "Feature"
+
+touch top.txt
+
+Et voilà notre premier fichier créé
+
+Il a fallu ensuite le modfier puis l'ajouter car il était pour l'instant à l'état "untracked" et "unmodified"
+
+git add top.txt
+
+Et le fichier passait à l'était staged, il ne nous restait plus qu'à le commit pour qu'il soit "snapshoté" et 
+pouvoir ainsi l'envoyer sur le repo distant grâce à la commande
+
+git push
